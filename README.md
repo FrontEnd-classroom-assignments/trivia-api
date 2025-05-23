@@ -1,8 +1,17 @@
-# React + TypeScript + Vite
+# Trivia API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fetch and Display a Random Trivia Question (3 points)
+Use the Open Trivia Database API to fetch and display a new random trivia question only when the user clicks a button. Do not fetch a question automatically when the app loads.
 
-Currently, two official plugins are available:
+Show this message when no question has been fetched yet "Click the button to get a trivia question!". Replace it once the user fetches the first question.
+
+Use this API endpoint to fetch a single question:
+`https://opentdb.com/api.php?amount=1`
+
+## Handle API Rate Limiting (2 points)
+The Open Trivia API restricts requests to one every 5 seconds per IP address. If requests are made too frequently, the API returns a **429 Too Many Requests** response.
+
+- Detect this status and display the message: "Please try again in a moment." to inform the user.
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
